@@ -11,14 +11,15 @@ import Firebase
 class LoginViewController: UIViewController {
     
     var loginView: LoginView?
-    
     var auth: Auth?
+    var alert: Alert?
     
     override func loadView() {
         super.loadView()
         
         self.loginView = LoginView()
         self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
         self.view = loginView
     }
 
@@ -61,11 +62,11 @@ extension LoginViewController: LoginViewProtocol {
         
         auth?.signIn(withEmail: email, password: password, completion: { result, error in
             guard result != nil && error == nil else {
-                print("Erro ao logar. Dados incorretos")
+                self.alert?.getAlert(title: "Atenção", message: "Dados incorretos. Por favor, verifique novamente!")
                 return
             }
             
-            print("Sucesso ao logar")
+            self.alert?.getAlert(title: "Parabéns", message: "Usuário logado com sucesso!")
         })
     }
     

@@ -12,12 +12,13 @@ import Firebase
 class RegisterViewController: UIViewController {
     
     var registerView: RegisterView?
-    
     var auth: Auth?
+    var alert: Alert?
     
     override func loadView() {
         super.loadView()
         self.registerView = RegisterView()
+        
         self.view = self.registerView
     }
     
@@ -26,7 +27,7 @@ class RegisterViewController: UIViewController {
 
         self.registerView?.setupTextFieldDelegate(delegate: self)
         self.registerView?.delegate(delegate: self)
-        
+        self.alert = Alert(controller: self)
         self.auth = Auth.auth()
         
         view.backgroundColor = .systemMint
@@ -65,13 +66,12 @@ extension RegisterViewController: RegisterViewProtocol {
         
         auth?.createUser(withEmail: email, password: password, completion: { result, error in
             guard error == nil && result != nil else {
-                print("Error ao cadastrar")
+                self.alert?.getAlert(title: "Atenção", message: "Erro ao cadastrar. Verifique os dados e tente novamente!")
                 return }
             
-            print("Sucesso")
-            
-            
+            self.alert?.getAlert(title: "Parabéns", message: "Usuário cadastrado com sucesso", completion: {
+                self.navigationController?.popViewController(animated: true)
+            })
         })
     }
-
 }

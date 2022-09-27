@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F9A32F428E3401E004EED31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A32F328E3401E004EED31 /* GoogleService-Info.plist */; };
+		0F9A32F728E365AD004EED31 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A32F628E365AD004EED31 /* Alert.swift */; };
 		0FD0460528E23B5100485ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460428E23B5100485ADC /* AppDelegate.swift */; };
 		0FD0460728E23B5100485ADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460628E23B5100485ADC /* SceneDelegate.swift */; };
 		0FD0460928E23B5100485ADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460828E23B5100485ADC /* LoginViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0F9A32F328E3401E004EED31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F9A32F628E365AD004EED31 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0FD0460128E23B5100485ADC /* LoginIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD0460428E23B5100485ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD0460628E23B5100485ADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9A32F528E3659E004EED31 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A32F628E365AD004EED31 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		0FD045F828E23B5100485ADC = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 		0FD0460328E23B5100485ADC /* LoginIn */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A32F528E3659E004EED31 /* Alert */,
 				0FD0461F28E2602B00485ADC /* Register */,
 				0FD0461828E23EA400485ADC /* Login */,
 				0FD0460428E23B5100485ADC /* AppDelegate.swift */,
@@ -269,6 +280,7 @@
 				0FD0462328E2605000485ADC /* RegisterViewController.swift in Sources */,
 				0FD0461C28E244BC00485ADC /* LoginView.swift in Sources */,
 				0FD0460728E23B5100485ADC /* SceneDelegate.swift in Sources */,
+				0F9A32F728E365AD004EED31 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

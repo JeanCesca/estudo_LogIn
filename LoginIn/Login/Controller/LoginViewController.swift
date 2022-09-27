@@ -59,13 +59,13 @@ extension LoginViewController: LoginViewProtocol {
         guard let email = loginView?.emailTextField.text,
                 let password = loginView?.passwordTextField.text
         else { return }
-        
+
         auth?.signIn(withEmail: email, password: password, completion: { result, error in
             guard result != nil && error == nil else {
                 self.alert?.getAlert(title: "Atenção", message: "Dados incorretos. Por favor, verifique novamente!")
                 return
             }
-            
+
             self.alert?.getAlert(title: "Parabéns", message: "Usuário logado com sucesso!")
         })
     }

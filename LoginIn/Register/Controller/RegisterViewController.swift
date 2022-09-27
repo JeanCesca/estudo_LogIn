@@ -7,10 +7,13 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
     var registerView: RegisterView?
+    
+    var auth: Auth?
     
     override func loadView() {
         super.loadView()
@@ -23,6 +26,9 @@ class RegisterViewController: UIViewController {
 
         self.registerView?.setupTextFieldDelegate(delegate: self)
         self.registerView?.delegate(delegate: self)
+        
+        self.auth = Auth.auth()
+        
         view.backgroundColor = .systemMint
     }
     
@@ -52,7 +58,20 @@ extension RegisterViewController: RegisterViewProtocol {
     }
     
     func actionRegisterButton() {
-        print("Register tapped")
+        
+        guard let email = registerView?.emailTextField.text,
+                let password = registerView?.passwordTextField.text
+        else { return }
+        
+        auth?.createUser(withEmail: email, password: password, completion: { result, error in
+            guard error == nil && result != nil else {
+                print("Error ao cadastrar")
+                return }
+            
+            print("Sucesso")
+            
+            
+        })
     }
 
 }

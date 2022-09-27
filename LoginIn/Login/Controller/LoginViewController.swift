@@ -6,15 +6,19 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
     var loginView: LoginView?
     
+    var auth: Auth?
+    
     override func loadView() {
         super.loadView()
         
         self.loginView = LoginView()
+        self.auth = Auth.auth()
         self.view = loginView
     }
 
@@ -50,7 +54,19 @@ extension LoginViewController: UITextFieldDelegate {
 extension LoginViewController: LoginViewProtocol {
     
     func actionLoginButton() {
-        print("login button")
+        
+        guard let email = loginView?.emailTextField.text,
+                let password = loginView?.passwordTextField.text
+        else { return }
+        
+        auth?.signIn(withEmail: email, password: password, completion: { result, error in
+            guard result != nil && error == nil else {
+                print("Erro ao logar. Dados incorretos")
+                return
+            }
+            
+            print("Sucesso ao logar")
+        })
     }
     
     func actionRegisterButton() {

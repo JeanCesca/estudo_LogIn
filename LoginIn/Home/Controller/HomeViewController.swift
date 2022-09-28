@@ -13,10 +13,17 @@ class HomeViewController: UIViewController {
     var homeView: HomeView?
     var homeTableViewCell: HomeTableViewCell?
     
-    var user: [UserModel] = [
+    var usersModel: [UserModel] = [
         UserModel(name: "Jean", image: "face.smiling.fill"),
         UserModel(name: "Paula", image: "face.smiling.fill"),
         UserModel(name: "Yan", image: "face.smiling.fill"),
+    ]
+    
+    var sportsModel: [SportModel] = [
+        SportModel(name: "Rabbit", nameImage: "hare"),
+        SportModel(name: "Turtle", nameImage: "tortoise"),
+        SportModel(name: "Ant", nameImage: "ant"),
+        SportModel(name: "Lady Bug", nameImage: "ladybug")
     ]
     
     override func viewDidLoad() {
@@ -34,20 +41,28 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user.count
+        return usersModel.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        if indexPath.row == usersModel.count {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SportTableViewCell.id, for: indexPath) as? SportTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.dataCollection(with: self.sportsModel)
+            return cell
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.id, for: indexPath) as? HomeTableViewCell else {
             return UITableViewCell()
         }
-        cell.setupCell(with: user[indexPath.row])
+        cell.setupCell(with: usersModel[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 120
     }
     
 }

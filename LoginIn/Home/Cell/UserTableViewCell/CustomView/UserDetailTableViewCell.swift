@@ -22,8 +22,8 @@ class UserDetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome"
-        label.font = .systemFont(ofSize: 20, weight: .regular)
-        label.textColor = .black
+        label.font = .systemFont(ofSize: 20, weight: .medium)
+        label.textColor = .secondaryLabel
         return label
     }()
     
@@ -40,13 +40,11 @@ class UserDetailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-
-    
     func setupUserImageViewConstraints() {
         userImageView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).offset(10)
-            make.height.width.equalTo(65)
+            make.height.width.equalTo(80)
         }
     }
     

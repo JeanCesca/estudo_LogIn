@@ -14,6 +14,10 @@
 		0F9A330128E3702A004EED31 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A330028E3702A004EED31 /* HomeTableViewCell.swift */; };
 		0F9A330428E372E8004EED31 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A330328E372E8004EED31 /* UserModel.swift */; };
 		0F9A330628E3789E004EED31 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A330528E3789E004EED31 /* UserDetailTableViewCell.swift */; };
+		0F9A330A28E37F30004EED31 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A330928E37F30004EED31 /* SportTableViewCell.swift */; };
+		0F9A330E28E3802B004EED31 /* SportTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A330D28E3802B004EED31 /* SportTableViewCellView.swift */; };
+		0F9A331128E385ED004EED31 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A331028E385ED004EED31 /* SportsCollectionViewCell.swift */; };
+		0F9A331328E38625004EED31 /* SportCollectionViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A331228E38625004EED31 /* SportCollectionViewCellView.swift */; };
 		0FD0460528E23B5100485ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460428E23B5100485ADC /* AppDelegate.swift */; };
 		0FD0460728E23B5100485ADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460628E23B5100485ADC /* SceneDelegate.swift */; };
 		0FD0460928E23B5100485ADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0460828E23B5100485ADC /* LoginViewController.swift */; };
@@ -22,6 +26,7 @@
 		0FD0461C28E244BC00485ADC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0461B28E244BC00485ADC /* LoginView.swift */; };
 		0FD0461E28E25FC600485ADC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0461D28E25FC600485ADC /* RegisterView.swift */; };
 		0FD0462328E2605000485ADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0462228E2605000485ADC /* RegisterViewController.swift */; };
+		0FEE447F28E38D16005F38C1 /* SportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE447E28E38D16005F38C1 /* SportModel.swift */; };
 		2F3DF8200A91634B9E34D2C9 /* Pods_LoginIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BF905D6D2128F819C77730 /* Pods_LoginIn.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,10 @@
 		0F9A330028E3702A004EED31 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		0F9A330328E372E8004EED31 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0F9A330528E3789E004EED31 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0F9A330928E37F30004EED31 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		0F9A330D28E3802B004EED31 /* SportTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellView.swift; sourceTree = "<group>"; };
+		0F9A331028E385ED004EED31 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F9A331228E38625004EED31 /* SportCollectionViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCellView.swift; sourceTree = "<group>"; };
 		0FD0460128E23B5100485ADC /* LoginIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD0460428E23B5100485ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD0460628E23B5100485ADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +52,7 @@
 		0FD0461B28E244BC00485ADC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0FD0461D28E25FC600485ADC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		0FD0462228E2605000485ADC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0FEE447E28E38D16005F38C1 /* SportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModel.swift; sourceTree = "<group>"; };
 		55BF905D6D2128F819C77730 /* Pods_LoginIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58168209D56D488B1A326D7C /* Pods-LoginIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginIn.debug.xcconfig"; path = "Target Support Files/Pods-LoginIn/Pods-LoginIn.debug.xcconfig"; sourceTree = "<group>"; };
 		AD1EE1A479498ACD2111C40C /* Pods-LoginIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginIn.release.xcconfig"; path = "Target Support Files/Pods-LoginIn/Pods-LoginIn.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,8 +108,8 @@
 		0F9A32FF28E37016004EED31 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0F9A330028E3702A004EED31 /* HomeTableViewCell.swift */,
-				0F9A330528E3789E004EED31 /* UserDetailTableViewCell.swift */,
+				0F9A330828E37F13004EED31 /* UserTableViewCell */,
+				0F9A330728E37F01004EED31 /* SportTableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -108,8 +118,61 @@
 			isa = PBXGroup;
 			children = (
 				0F9A330328E372E8004EED31 /* UserModel.swift */,
+				0FEE447E28E38D16005F38C1 /* SportModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0F9A330728E37F01004EED31 /* SportTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A330F28E3859F004EED31 /* CollectionViewCell */,
+				0F9A330C28E3800C004EED31 /* CustomView */,
+				0F9A330928E37F30004EED31 /* SportTableViewCell.swift */,
+			);
+			path = SportTableViewCell;
+			sourceTree = "<group>";
+		};
+		0F9A330828E37F13004EED31 /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A330028E3702A004EED31 /* HomeTableViewCell.swift */,
+				0F9A330B28E38001004EED31 /* CustomView */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		0F9A330B28E38001004EED31 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A330528E3789E004EED31 /* UserDetailTableViewCell.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		0F9A330C28E3800C004EED31 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A330D28E3802B004EED31 /* SportTableViewCellView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		0F9A330F28E3859F004EED31 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A331628E38672004EED31 /* CollectionCustomView */,
+				0F9A331028E385ED004EED31 /* SportsCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0F9A331628E38672004EED31 /* CollectionCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A331228E38625004EED31 /* SportCollectionViewCellView.swift */,
+			);
+			path = CollectionCustomView;
 			sourceTree = "<group>";
 		};
 		0FD045F828E23B5100485ADC = {
@@ -331,12 +394,17 @@
 			files = (
 				0F9A32FE28E36A5A004EED31 /* HomeView.swift in Sources */,
 				0F9A330628E3789E004EED31 /* UserDetailTableViewCell.swift in Sources */,
+				0F9A331328E38625004EED31 /* SportCollectionViewCellView.swift in Sources */,
 				0FD0460928E23B5100485ADC /* LoginViewController.swift in Sources */,
+				0F9A330E28E3802B004EED31 /* SportTableViewCellView.swift in Sources */,
 				0FD0461E28E25FC600485ADC /* RegisterView.swift in Sources */,
 				0FD0460528E23B5100485ADC /* AppDelegate.swift in Sources */,
 				0F9A32FC28E36A42004EED31 /* HomeViewController.swift in Sources */,
+				0F9A330A28E37F30004EED31 /* SportTableViewCell.swift in Sources */,
 				0FD0462328E2605000485ADC /* RegisterViewController.swift in Sources */,
+				0FEE447F28E38D16005F38C1 /* SportModel.swift in Sources */,
 				0F9A330128E3702A004EED31 /* HomeTableViewCell.swift in Sources */,
+				0F9A331128E385ED004EED31 /* SportsCollectionViewCell.swift in Sources */,
 				0FD0461C28E244BC00485ADC /* LoginView.swift in Sources */,
 				0FD0460728E23B5100485ADC /* SceneDelegate.swift in Sources */,
 				0F9A32F728E365AD004EED31 /* Alert.swift in Sources */,
